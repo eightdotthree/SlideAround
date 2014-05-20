@@ -7,7 +7,7 @@ Options
 -------
 **slideAroud:** null *(default)* *required - Image to slide around
  
-**slides:** null *(default)* *required - The slides class name
+**slides:** null *(default)* *required - The slides class name *ex: $('.slide')* 
 
 **currSlideNum:** 0 *(default)* - Sets the starting slide
 
