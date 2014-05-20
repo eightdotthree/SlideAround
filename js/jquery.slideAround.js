@@ -50,13 +50,16 @@
 		adjustMarginFunc = function(){
 			adjustedMargin = (settings.slideAround.offset().left)+slideAroundWidth;
 
+			if(settings.currSlideNum > 0){
+				adjustedMargin = adjustedMargin-(slideWidth*settings.currSlideNum);
+				adjustedMargin = adjustedMargin-slideAroundWidth;
+				adjustedMargin = adjustedMargin-settings.margin;
+			}
+
 			if(settings.css && !$('.lt-ie9').length){
 				if(settings.currSlideNum == 0){
 					settings.container.css({'margin-left': adjustedMargin})
 				}else{
-					adjustedMargin = adjustedMargin-(slideWidth*settings.currSlideNum);
-					adjustedMargin = adjustedMargin-slideAroundWidth;
-					adjustedMargin = adjustedMargin-settings.margin;
 					currSlide.css({'margin-left': slideAroundWidth+(settings.margin*2)})
 					settings.container.css({'margin-left': adjustedMargin})
 				}
@@ -64,10 +67,6 @@
 				if(settings.currSlideNum == 0){
 					settings.container.animate({'margin-left': adjustedMargin})
 				}else{
-					adjustedMargin = adjustedMargin-(slideWidth*settings.currSlideNum);
-					adjustedMargin = adjustedMargin-slideAroundWidth;
-					adjustedMargin = adjustedMargin-settings.margin;
-					currSlide.css({'margin-left': slideAroundWidth+(settings.margin*2)})
 					currSlide.animate({'margin-left': slideAroundWidth+(settings.margin*2)})
 					settings.container.animate({'margin-left': adjustedMargin})
 				}
