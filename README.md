@@ -5,9 +5,9 @@ Slide that slides around a static image.
 
 Options
 -------
-**slideAroud:** null *(default)* *required
-
-**slides:** null *(default)* *required
+**slideAroud:** null *(default)* *required - Image to slide around
+ 
+**slides:** null *(default)* *required - The slides class name
 
 **currSlideNum:** 0 *(default)* - Sets the starting slide
 
