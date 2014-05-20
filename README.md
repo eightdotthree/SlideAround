@@ -1,4 +1,4 @@
-Slidely
+Slide Around
 =======
 
 Slide that slides around a static image.

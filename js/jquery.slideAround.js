@@ -1,5 +1,5 @@
 (function ($) {
-	$.fn.slidely = function(options){
+	$.fn.slideAround = function(options){
 		var settings = $.extend({
 				slideAroud: null,
 				slides: null,

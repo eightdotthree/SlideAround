@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Slidely Demo</title>
+	<title>Slide Around Demo</title>
 	<style>
 		body, html{
 			margin: 0;
@@ -50,7 +50,7 @@
 	</style>
 </head>
 <body>
-	<div class="slidely">
+	<div class="slideAround">
 		<div class="wrapper">
 			<div class="static-image">
 				<a href="#" class="next_btn">Next</a>
@@ -78,14 +78,14 @@
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/jquery.touchwipe.js"></script>
-	<script src="js/jquery.slidely.js"></script>
+	<script src="js/jquery.slideAround.js"></script>
 	<script>
 		$(function(){
-			$('.slidely .carousel').slidely({
-				slideAround: $('.slidely').find('.static-image'),
-				slides: $('.slidely').find('.slide'),
-				nextBtn: $('.slidely').find('.next_btn'),
-				prevBtn: $('.slidely').find('.prev_btn')
+			$('.slideAround .carousel').slideAround({
+				slideAround: $('.slideAround').find('.static-image'),
+				slides: $('.slideAround').find('.slide'),
+				nextBtn: $('.slideAround').find('.next_btn'),
+				prevBtn: $('.slideAround').find('.prev_btn')
 			});
 		})
 	</script>
